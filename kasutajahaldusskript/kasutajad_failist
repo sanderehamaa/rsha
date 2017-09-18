@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#
+
+kasutajafail=${1?puudub sisendfail}
+
+# muutujate formaadid
+# user - kasutaja:password
+# username - kasutaja
+# kasutajafail - paroolifail
+
+for user in $(cat $kasutajafail)
+do
+	username=$(echo $user | cut -d ':' -f 1)
+	sh lisa_kasutaja $username
+	echo $user | chpasswd
+done
