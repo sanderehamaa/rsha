@@ -1,5 +1,5 @@
 #!/bin/bash
 #
-# Lisab kasutaja, vottes nime $
+# Lisab kasutaja, võttes nime $
 
 useradd -m --shell=/bin/bash $1
