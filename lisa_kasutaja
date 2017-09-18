@@ -1,5 +1,0 @@
-#!/bin/bash
-#
-# Lisab kasutaja, vottes nime $
-
-useradd -m --shell=/bin/bash $1
