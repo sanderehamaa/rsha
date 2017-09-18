@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#
+
+kasutajafail=${1?kasutajafail on puudu}
+passwordfail=${2?paroolifail on puudu}
+
+for kasutaja in $(cat $kasutajafail)
+do
+	useradd -m --shell=/bin/bash $kasutaja
+	Kasutaja $kasutaja on loodud
+	
+done
